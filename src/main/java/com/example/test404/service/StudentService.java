@@ -68,15 +68,6 @@ public class StudentService {
         } catch(IOException e){
             e.printStackTrace();
         }
-//
-//        try (BufferedWriter writter = new BufferedWriter(new FileWriter(filename))) {
-//			for (Student student : studentRepository.findAll()) {
-//				writter.write(student + "\n");
-//			}
-//		}
-//		catch (IOException e) {
-//			e.printStackTrace();
-//		}
     }
 
 }

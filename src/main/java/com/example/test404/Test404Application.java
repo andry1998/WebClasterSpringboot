@@ -29,11 +29,11 @@ public class Test404Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		String filename = "StudentFile.txt";
+
 		//personRepository.save(new Person("Oleg", "Mirzeabasov", "oam@mail.ru", securityConfig.passwordEncoder().encode("admin"), Role.ADMIN, Status.ACTIVE));
 		//personRepository.save(new Person("Andrey", "Brynza", "brynza@mail.ru", securityConfig.passwordEncoder().encode("admin"), Role.ADMIN, Status.ACTIVE));
 		//studentRepository.save(new Student("Liza", "Got", "lissssaGot@mail.ru", "a091098b", "IVT-B16"));
-		studentService.writerToFile(filename);
+		//studentService.writerToFile(filename);
 //		try (BufferedWriter writter = new BufferedWriter(new FileWriter(filename))) {
 //			for (Student student : studentRepository.findAll()) {
 //				writter.write(student + "\n");
