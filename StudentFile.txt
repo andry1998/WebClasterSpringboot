@@ -1,0 +1,4 @@
+Student(id=6, first_name=Liza, last_name=Got, email=lissssaGot@mail.ru, password=a091098b, study_group=IVT-B16)
+Student(id=8, first_name=Liza, last_name=Got, email=lissssaGot@mail.ru, password=a091098b, study_group=IVT-B16)
+Student(id=10, first_name=Liza, last_name=Got, email=lissssaGot@mail.ru, password=a091098b, study_group=IVT-B16)
+Student(id=12, first_name=Liza, last_name=Got, email=lissssaGot@mail.ru, password=a091098b, study_group=IVT-B16)

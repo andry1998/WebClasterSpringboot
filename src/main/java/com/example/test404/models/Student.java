@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = Student.TABLE_NAME)
 
-public class Student {
+public class Student implements Serializable{
 
     public static final String TABLE_NAME = "students";
 

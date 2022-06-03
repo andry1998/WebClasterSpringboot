@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,5 +60,23 @@ public class StudentService {
         return studentRepository.getStudyGroup();
     }
 
+    public void writerToFile(String filename){
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filename))){
+            for(Student student : studentRepository.findAll()){
+                bufferedWriter.write(student + "\n");
+            }
+        } catch(IOException e){
+            e.printStackTrace();
+        }
+//
+//        try (BufferedWriter writter = new BufferedWriter(new FileWriter(filename))) {
+//			for (Student student : studentRepository.findAll()) {
+//				writter.write(student + "\n");
+//			}
+//		}
+//		catch (IOException e) {
+//			e.printStackTrace();
+//		}
+    }
 
 }
