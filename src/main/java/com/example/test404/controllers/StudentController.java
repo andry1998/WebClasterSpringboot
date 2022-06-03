@@ -70,4 +70,10 @@ public class StudentController {
     public List<String> getGroup(){
         return studentService.getGroup();
     }
+
+    @GetMapping("/pwd")
+        public String getRandomPass(){
+            return studentService.getRandomPassword(10);
+        }
 }
+

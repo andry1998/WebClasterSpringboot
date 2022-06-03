@@ -60,6 +60,10 @@ public class StudentService {
         return studentRepository.getStudyGroup();
     }
 
+    public String getRandomPassword(int len){
+        return securityConfig.generatedPassword();
+    }
+
     public void writerToFile(String filename){
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filename))){
             for(Student student : studentRepository.findAll()){

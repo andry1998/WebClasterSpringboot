@@ -34,14 +34,6 @@ public class Test404Application implements CommandLineRunner {
 		//personRepository.save(new Person("Andrey", "Brynza", "brynza@mail.ru", securityConfig.passwordEncoder().encode("admin"), Role.ADMIN, Status.ACTIVE));
 		//studentRepository.save(new Student("Liza", "Got", "lissssaGot@mail.ru", "a091098b", "IVT-B16"));
 		//studentService.writerToFile(filename);
-//		try (BufferedWriter writter = new BufferedWriter(new FileWriter(filename))) {
-//			for (Student student : studentRepository.findAll()) {
-//				writter.write(student + "\n");
-//			}
-//		}
-//		catch (IOException e) {
-//			e.printStackTrace();
-//		}
 
 	}
 
