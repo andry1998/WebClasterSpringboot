@@ -3,6 +3,8 @@ package com.example.test404.controllers;
 import com.example.test404.config.SecurityConfig;
 import com.example.test404.exception.ResourceNotFoundException;
 import com.example.test404.models.Person;
+import com.example.test404.models.Role;
+import com.example.test404.models.Status;
 import com.example.test404.repository.PersonRepository;
 import com.example.test404.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -82,7 +84,12 @@ public class PersonController {
     }
 
     @GetMapping("/roles")
-    public List<String> getRoles(){
+    public Role[] getRoles(){
         return personService.getRoles();
+    }
+
+    @GetMapping("/status")
+    public Status[] getStatus(){
+        return personService.getStatus();
     }
 }

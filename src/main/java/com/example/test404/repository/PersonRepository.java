@@ -14,4 +14,7 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 
     @Query(value = "select distinct role from persons", nativeQuery = true)
     List<String> getRoles();
+
+    @Query(value = "select distinct status from persons", nativeQuery = true)
+    List<String> getStatus();
 }

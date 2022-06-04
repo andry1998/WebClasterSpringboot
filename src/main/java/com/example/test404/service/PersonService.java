@@ -4,6 +4,7 @@ import com.example.test404.config.SecurityConfig;
 import com.example.test404.exception.ResourceNotFoundException;
 import com.example.test404.models.Person;
 import com.example.test404.models.Role;
+import com.example.test404.models.Status;
 import com.example.test404.models.Student;
 import com.example.test404.repository.PersonRepository;
 import com.example.test404.repository.StudentRepository;
@@ -57,8 +58,13 @@ public class PersonService {
         return ResponseEntity.ok(response);
     }
 
-    public List<String> getRoles(){
-        return personRepository.getRoles();
+    public Role[] getRoles(){
+
+        //return personRepository.getRoles();
+        return Role.values();
+    }
+    public Status[] getStatus(){
+        return Status.values();
     }
 
 
