@@ -75,5 +75,10 @@ public class StudentController {
         public String getRandomPass(){
             return studentService.getRandomPassword(10);
         }
+
+    @PostMapping("/searchGroup")
+    public List<Student> searchOfGroup(@RequestParam String group){
+        return studentService.searchStudentOfGroup(group);
+    }
 }
 

@@ -11,4 +11,7 @@ import java.util.List;
 public interface StudentRepository extends JpaRepository<Student, Long> {
     @Query(value = "select distinct study_group from students", nativeQuery = true)
     List<String> getStudyGroup();
+
+    @Query(value = "SELECT * FROM students WHERE study_group = ?1", nativeQuery = true)
+    List<Student> searchStudentOfGroup(String group);
 }

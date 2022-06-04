@@ -60,6 +60,10 @@ public class StudentService {
         return studentRepository.getStudyGroup();
     }
 
+    public List<Student> searchStudentOfGroup(String group){
+        return studentRepository.searchStudentOfGroup(group);
+    }
+
     public String getRandomPassword(int len){
         return securityConfig.generatedPassword();
     }
