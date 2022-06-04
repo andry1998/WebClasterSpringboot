@@ -1,2 +1,4 @@
-Student(id=8, first_name=Liza, last_name=Got, email=lissssaGot@mail.ru, password=a091098b, study_group=IVT-B16)
-Student(id=13, first_name=aaa, last_name=bbb, email=safassa@mail.ru, password=aaaaaaa, study_group=IS-M21)
+Student(id=18, first_name=Андрей, last_name=Брынза, email=brynza_andrey@mail.ru, password=V96IQ8VIFE, study_group=IS-M12)
+Student(id=17, first_name=Андрей, last_name=Брынза, email=brynza_andrey@mail.ru, password=7EZTAL0HUZ4AE, study_group=IS-M23)
+Student(id=19, first_name=Liza, last_name=Brozova, email=liza@mail.ru, password=T6BEYC79FZ106F, study_group=IVT-B17)
+Student(id=21, first_name=Андрей, last_name=Брынза, email=brynza_andrey@mail.ru, password=AC1KY6QVRBS7, study_group=IVT-B10)

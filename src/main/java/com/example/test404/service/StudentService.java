@@ -40,7 +40,7 @@ public class StudentService {
         student.setFirst_name(studentDetails.getFirst_name());
         student.setLast_name(studentDetails.getLast_name());
         student.setEmail(studentDetails.getEmail());
-        student.setPassword(securityConfig.passwordEncoder().encode(studentDetails.getPassword()));
+        student.setPassword(studentDetails.getPassword());
         student.setStudy_group(studentDetails.getStudy_group());
 
 
