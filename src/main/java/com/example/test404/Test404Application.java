@@ -1,6 +1,9 @@
 package com.example.test404;
 
 import com.example.test404.config.SecurityConfig;
+import com.example.test404.models.Person;
+import com.example.test404.models.Role;
+import com.example.test404.models.Status;
 import com.example.test404.repository.PersonRepository;
 import com.example.test404.repository.StudentRepository;
 import com.example.test404.service.StudentService;

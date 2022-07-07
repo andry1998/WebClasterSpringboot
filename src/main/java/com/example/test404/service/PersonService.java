@@ -59,8 +59,6 @@ public class PersonService {
     }
 
     public Role[] getRoles(){
-
-        //return personRepository.getRoles();
         return Role.values();
     }
     public Status[] getStatus(){
